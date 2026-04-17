@@ -45,7 +45,7 @@ Each model will be trained and evaluated separately to determine which approach 
 ## Project Structure
 
 ```
-DAT255-music-genre-detector/
+DAT255-music-genre-classification/
 ├── data/                    # Dataset files (raw audio, spectrograms, CSV)
 ├── models/                  # Trained model files
 ├── notebooks/               # Jupyter notebooks for model development
@@ -81,7 +81,7 @@ This project was initially intended to be deployed online, but problems with int
 Clone the repository into your local storage.
 
 ```bash
-git clone https://github.com/h669804/DAT255-music-genre-detector.git
+git clone https://github.com/h669804/DAT255-music-genre-classification.git
 ```
 
 ### 2. Download the dataset
@@ -96,7 +96,7 @@ Alternatively, open the notebooks in Kaggle and adjust the file paths.
 ### 3. Navigate to the project folder
 
 ```bash
-cd DAT255-music-genre-detector
+cd DAT255-music-genre-classification
 ```
 
 ### 4. Download required packages
