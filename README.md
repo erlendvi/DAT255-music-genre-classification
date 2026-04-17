@@ -1,4 +1,4 @@
-# DAT255-music-genre-detector
+# DAT255-music-genre-classification
 
 ![Python](https://img.shields.io/badge/python-3.12.4-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
