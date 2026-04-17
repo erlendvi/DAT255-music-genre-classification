@@ -130,6 +130,40 @@ Alternatively, if you wish to run the notebooks locally, you will need to:
 1. Modify all data loading and saving paths to match your local repository structure
 2. Ensure you have access to a GPU for model training (especially for the CNN models)
 
+## Results & Findings
+
+We evaluated three different approaches to music genre classification:
+
+- 1D CNN on raw audio waveforms
+- 2D CNN on mel-spectrograms
+- FCNN on tabular audio features
+
+### Key Results
+
+- 2D CNN (spectrograms) achieved ~92% accuracy with fast convergence (~29 epochs)
+- FCNN (tabular features) achieved the highest accuracy (~93%), but required significantly more training (~98 epochs)
+- 1D CNN (raw audio) achieved ~87% accuracy and underperformed compared to other approaches
+
+### Generalization (Real-world test)
+
+When tested on modern music (2013–2022):
+
+- 2D CNN correctly classified 7/10 songs
+- FCNN classified 5/10
+- 1D CNN classified 4/10
+
+This highlights the importance of representation choice and robustness to concept drift.
+
+### Tradeoffs
+
+- **2D CNN**: Best balance of accuracy and efficiency
+- **FCNN**: Highest accuracy, but slow and sensitive to optimizer choice
+- **1D CNN**: Fastest, but lowest performance
+
+### Conclusion
+
+Mel-spectrogram-based models (2D CNN) provide the best tradeoff between performance, stability, and generalization for this task.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
